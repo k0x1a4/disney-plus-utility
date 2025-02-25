@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Disney Plus Utility",
+  "version": "1.0",
+  "author": "nicolas.hage2@gmail.com",
+  "description": "Automatically presses the 'Skip Intro' button on Disney Plus.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.disneyplus.com/*"
+  ],
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.disneyplus.com/*"],
+      "js": ["src/content_script.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "32": "images/icon-32.png",
+      "256": "images/icon-256.png"
+    }
+  },
+  "icons": {
+    "32": "images/icon-32.png",
+	"256": "images/icon-256.png"
+  }
+}
