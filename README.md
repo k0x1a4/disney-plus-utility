@@ -15,7 +15,9 @@ With the sleep timer functionality you can comfortably put on your comfort show 
 6. The extension should now be installed and active.
 
 ### Chrome Web Store
-TODO
+
+Install this extension from the Google Chrome Web Store
+https://chromewebstore.google.com/detail/disney-plus-utility/mocgckjmnfclclhggghhdanflojginho
 
 ## Usage
 
